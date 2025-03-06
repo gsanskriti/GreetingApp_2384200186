@@ -1,0 +1,56 @@
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/appsettings.Development.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/appsettings.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.deps.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.runtimeconfig.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.MvcApplicationPartsAssemblyInfo.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/staticwebassets.build.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/staticwebassets.development.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/scopedcss/bundle/HelloGreetingApplication.styles.css
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/refint/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.genruntimeconfig.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/ref/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/appsettings.Development.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/appsettings.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.deps.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.runtimeconfig.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/HelloGreetingApplication.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.MvcApplicationPartsAssemblyInfo.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/staticwebassets.build.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/staticwebassets.development.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/scopedcss/bundle/HelloGreetingApplication.styles.css
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.csproj.CopyComplete
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/refint/HelloGreetingApplication.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/HelloGreetingApplication.genruntimeconfig.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/Debug/net6.0/ref/HelloGreetingApplication.dll

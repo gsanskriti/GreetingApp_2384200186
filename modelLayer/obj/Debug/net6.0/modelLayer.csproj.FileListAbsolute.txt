@@ -1,0 +1,24 @@
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.deps.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/refint/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/modelLayer/obj/Debug/net6.0/ref/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.deps.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/refint/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/Debug/net6.0/ref/modelLayer.dll

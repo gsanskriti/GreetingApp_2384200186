@@ -1,0 +1,30 @@
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.deps.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/refint/repositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/ref/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.deps.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.csproj.CopyComplete
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/refint/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/Debug/net6.0/ref/repositoryLayer.dll

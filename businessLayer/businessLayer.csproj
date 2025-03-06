@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="interface\" />
+    <None Remove="services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="interface\" />
+    <Folder Include="services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\modelLayer\modelLayer.csproj" />
+    <ProjectReference Include="..\repositoryLayer\repositoryLayer.csproj" />
+  </ItemGroup>
+</Project>

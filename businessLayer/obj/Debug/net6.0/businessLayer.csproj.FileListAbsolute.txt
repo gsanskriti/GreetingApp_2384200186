@@ -1,0 +1,34 @@
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.deps.json
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.CopyComplete
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/refint/businessLayer.dll
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/cg training/helloGreetingApp/businessLayer/obj/Debug/net6.0/ref/businessLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.deps.json
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/modelLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/repositoryLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/modelLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/bin/Debug/net6.0/repositoryLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.AssemblyReference.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.AssemblyInfoInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.AssemblyInfo.cs
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.CoreCompileInputs.cache
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.csproj.CopyComplete
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/refint/businessLayer.dll
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/businessLayer.pdb
+/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/Debug/net6.0/ref/businessLayer.dll

@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "modelLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/modelLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/modelLayer.dll": {}
+        }
+      },
+      "repositoryLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "modelLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/repositoryLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/repositoryLayer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "modelLayer/1.0.0": {
+      "type": "project",
+      "path": "../modelLayer/modelLayer.csproj",
+      "msbuildProject": "../modelLayer/modelLayer.csproj"
+    },
+    "repositoryLayer/1.0.0": {
+      "type": "project",
+      "path": "../repositoryLayer/repositoryLayer.csproj",
+      "msbuildProject": "../repositoryLayer/repositoryLayer.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "modelLayer >= 1.0.0",
+      "repositoryLayer >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/swapnilgupta/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj",
+      "projectName": "businessLayer",
+      "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj",
+      "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
+      "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {
+              "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj"
+            },
+            "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj": {
+              "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
