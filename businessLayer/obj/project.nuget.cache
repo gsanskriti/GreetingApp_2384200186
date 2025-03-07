@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+/MwU6yaZCweWcREoYIsJ4oXo381YdnmMQp+aYmSnqoWWRIVNEuX3WZAgSU6JmgaZeynIoLBFLuUy93paTfNBg==",
+  "dgSpecHash": "hr3P3GaPW0GQra/dd+pSzplUvi3Gs3I3XybZNfJQ/Kyqiw3y909z+CBMLoum7vb133BeHJkphXKt4CdgJw5wpQ==",
   "success": true,
-  "projectFilePath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj",
+  "projectFilePath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

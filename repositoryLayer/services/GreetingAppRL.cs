@@ -9,10 +9,10 @@ namespace repositoryLayer.services
 {
 	public class GreetingAppRL: IGreetingAppRL
     {
-		public GreetingAppRL()
+		public string GreetingMessage()
 		{
-
-		}
+			return "Hello, world! ";
+		} 
 	}
 }
 

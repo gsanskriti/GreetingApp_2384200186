@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {}
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {}
   },
   "projects": {
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
         "projectName": "modelLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj": {}
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj": {}
   },
   "projects": {
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj",
         "projectName": "businessLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {
-                "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj"
+              "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj"
               },
-              "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj": {
-                "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj"
+              "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj"
               }
             }
           }
@@ -64,14 +64,14 @@
         }
       }
     },
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj",
         "projectName": "HelloGreetingApplication",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/HelloGreetingApplication/HelloGreetingApplication.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/HelloGreetingApplication/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/HelloGreetingApplication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -86,8 +86,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj": {
-                "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/businessLayer/businessLayer.csproj"
+              "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/businessLayer/businessLayer.csproj"
               }
             }
           }
@@ -101,6 +101,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -124,14 +134,14 @@
         }
       }
     },
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
         "projectName": "modelLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -177,14 +187,14 @@
         }
       }
     },
-    "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj",
         "projectName": "repositoryLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/repositoryLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/repositoryLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -199,8 +209,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj": {
-                "projectPath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj"
+              "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj"
               }
             }
           }

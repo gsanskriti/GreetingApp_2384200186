@@ -3,6 +3,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
 using modelLayer.model;
 
 namespace HelloGreetingApplication.Controllers
@@ -14,6 +16,17 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class GreetingAppController : ControllerBase
     {
+        private readonly ILogger<GreetingAppController> _logger;
+        ///<summary>
+        ///dependency with logger
+        ///</summary>
+        ///<returns>logger</returns>
+
+        public GreetingAppController(ILogger<GreetingAppController> logger)
+        {
+            _logger = logger;
+        }
+
         /// <summary>
         /// GET method to retrieve the greeting message
         /// </summary>
@@ -21,6 +34,8 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            _logger.LogInformation("GET request received for GreetingAppController.");
+
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
@@ -28,6 +43,7 @@ namespace HelloGreetingApplication.Controllers
                 Data = "Hello, World!"
             };
 
+            _logger.LogInformation("GET response sent successfully.");
             return Ok(responseModel);
         }
 
@@ -41,6 +57,7 @@ namespace HelloGreetingApplication.Controllers
         {
             if (string.IsNullOrEmpty(greeting))
             {
+                _logger.LogWarning("POST request failed: Greeting message is empty.");
                 return BadRequest(new ResponseModel<string>
                 {
                     Success = false,
@@ -48,6 +65,8 @@ namespace HelloGreetingApplication.Controllers
                     Data = null
                 });
             }
+
+            _logger.LogInformation("POST request received with message: {Greeting}", greeting);
 
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
@@ -69,6 +88,8 @@ namespace HelloGreetingApplication.Controllers
         {
             if (string.IsNullOrEmpty(updatedGreeting))
             {
+                _logger.LogWarning("PUT request failed: Updated greeting message is empty.");
+
                 return BadRequest(new ResponseModel<string>
                 {
                     Success = false,
@@ -76,6 +97,7 @@ namespace HelloGreetingApplication.Controllers
                     Data = null
                 });
             }
+            _logger.LogInformation("PUT request received with updated message: {UpdatedGreeting}", updatedGreeting);
 
             return Ok(new ResponseModel<string>
             {
@@ -95,6 +117,8 @@ namespace HelloGreetingApplication.Controllers
         {
             if (string.IsNullOrEmpty(partialUpdate))
             {
+                _logger.LogWarning("PATCH request failed: Partial update message is empty.");
+
                 return BadRequest(new ResponseModel<string>
                 {
                     Success = false,
@@ -102,6 +126,8 @@ namespace HelloGreetingApplication.Controllers
                     Data = null
                 });
             }
+
+            _logger.LogInformation("PATCH request received with partial update: {PartialUpdate}", partialUpdate);
 
             return Ok(new ResponseModel<string>
             {
@@ -118,6 +144,8 @@ namespace HelloGreetingApplication.Controllers
         [HttpDelete]
         public IActionResult Delete()
         {
+            _logger.LogInformation("DELETE request received ");
+
             return Ok(new ResponseModel<string>
             {
                 Success = true,

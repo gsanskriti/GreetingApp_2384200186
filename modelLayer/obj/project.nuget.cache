@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p+6vKud63+b2etx7W3TFEZ1gd58utNIU5GtsF3IL3q66bXB4lmPLQjdLxfI8vnikFqeh1vUcsQJayaowpXKulw==",
+  "dgSpecHash": "bUUN4PwW3oYVWgZ9Ojrq/pb5tCT8PnlojLViIEZfPI8tK+92+ibNlWBG/oZjxLZ+KV83f6phNsBNUUIPpO8NEg==",
   "success": true,
-  "projectFilePath": "/Users/swapnilgupta/Documents/GitHub/helloGreetingApp/modelLayer/modelLayer.csproj",
+  "projectFilePath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,9 @@
 ﻿using System;
 namespace businessLayer.@interface
 {
-	public interface greetingAppBL
+	public interface IGreetingAppBL
 	{
-	}
+        public string GreetingMessage();
+    }
 }
 
