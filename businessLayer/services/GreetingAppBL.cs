@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using businessLayer.@interface;
+using modelLayer.model;
 using repositoryLayer.@interface;
 
 namespace businessLayer.services
@@ -18,12 +19,20 @@ namespace businessLayer.services
 			_greetingRL = greetingRL;
 		}
 
-		public string GreetingMessage()
+        public string HelloMessage()
 		{
-			var result = _greetingRL.GreetingMessage();
+
+            var result = _greetingRL.HelloMessage();
+            return result;
+        }
+
+        public string GreetingMessage(UserModel userMode)
+		{
+			var result = _greetingRL.GreetingMessage(userMode);
 			return result;
 
         }
+
     }
 }
 

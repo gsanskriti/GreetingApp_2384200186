@@ -1,6 +1,10 @@
 ﻿using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
+using businessLayer.@interface;
+using businessLayer.services;
+using repositoryLayer.@interface;
+using repositoryLayer.services;
 
 // Configure logger
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("NLog.config").GetCurrentClassLogger();
@@ -14,6 +18,10 @@ builder.Logging.ClearProviders();
 builder.Host.UseNLog();
 builder.Logging.AddConsole();   
 builder.Logging.AddDebug();
+
+// Register Layer
+builder.Services.AddScoped<IGreetingAppBL, GreetingAppBL>();
+builder.Services.AddScoped<IGreetingAppRL, GreetingAppRL>();
 
 // Add services to the container.
 builder.Services.AddControllers();
