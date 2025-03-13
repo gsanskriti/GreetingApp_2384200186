@@ -198,3 +198,4 @@
 2025-03-07 15:41:32.7966 | INFO | Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker | Executed action HelloGreetingApplication.Controllers.GreetingAppController.Put (HelloGreetingApplication) in 5.3669ms 
 2025-03-07 15:41:32.7966 | INFO | Microsoft.AspNetCore.Routing.EndpointMiddleware | Executed endpoint 'HelloGreetingApplication.Controllers.GreetingAppController.Put (HelloGreetingApplication)' 
 2025-03-07 15:41:32.7966 | INFO | Microsoft.AspNetCore.Hosting.Diagnostics | Request finished HTTP/1.1 PUT https://localhost:7042/GreetingApp application/json 42 - 200 - application/json;+charset=utf-8 7.5831ms 
+2025-03-07 17:04:08.9102 | INFO | HelloGreetingApplication.Program | Started app... 

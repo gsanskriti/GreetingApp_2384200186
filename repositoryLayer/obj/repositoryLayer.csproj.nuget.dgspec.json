@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj": {}
+    "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/repositoryLayer/repositoryLayer.csproj": {}
   },
   "projects": {
-    "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/modelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/modelLayer.csproj",
         "projectName": "modelLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/modelLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -57,14 +57,14 @@
         }
       }
     },
-    "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj": {
+    "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/repositoryLayer/repositoryLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj",
+        "projectUniqueName": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/repositoryLayer/repositoryLayer.csproj",
         "projectName": "repositoryLayer",
-        "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/repositoryLayer.csproj",
+        "projectPath": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/repositoryLayer/repositoryLayer.csproj",
         "packagesPath": "/Users/swapnilgupta/.nuget/packages/",
-        "outputPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/repositoryLayer/obj/",
+        "outputPath": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/repositoryLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/swapnilgupta/.nuget/NuGet/NuGet.Config"
@@ -79,8 +79,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj": {
-                "projectPath": "/Users/swapnilgupta/Documents/GitHub/greetingApp/modelLayer/modelLayer.csproj"
+              "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/modelLayer.csproj": {
+                "projectPath": "/Users/swapnilgupta/Documents/GitHub/HelloGreetingApplication/modelLayer/modelLayer.csproj"
               }
             }
           }
@@ -94,6 +94,36 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

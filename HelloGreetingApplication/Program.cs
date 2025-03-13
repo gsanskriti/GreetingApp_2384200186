@@ -5,6 +5,8 @@ using businessLayer.@interface;
 using businessLayer.services;
 using repositoryLayer.@interface;
 using repositoryLayer.services;
+using Microsoft.EntityFrameworkCore;
+using repositoryLayer.Context;
 
 // Configure logger
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("NLog.config").GetCurrentClassLogger();
@@ -16,8 +18,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add logging
 builder.Logging.ClearProviders();
 builder.Host.UseNLog();
-builder.Logging.AddConsole();   
+builder.Logging.AddConsole();
 builder.Logging.AddDebug();
+
+// Register DbContext 
+
+builder.Services.AddDbContext<HelloGreetingContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("HelloGreetingContext")));
 
 // Register Layer
 builder.Services.AddScoped<IGreetingAppBL, GreetingAppBL>();
@@ -43,8 +50,9 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-var app = builder.Build();
 
+
+var app = builder.Build();
 
 // Enable Swagger UI
 if (app.Environment.IsDevelopment())
@@ -57,7 +65,6 @@ if (app.Environment.IsDevelopment())
 }
 
 // Configure the HTTP request pipeline.
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
