@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using businessLayer.@interface;
 using modelLayer.model;
 using repositoryLayer.@interface;
+using repositoryLayer.Entity;
 
 namespace businessLayer.services
 {
@@ -25,24 +26,24 @@ namespace businessLayer.services
             return await _greetingRL.GreetingMessage(userModel);
         }
 
-        public async Task<List<UserModel>> GetAllGreetings()
+        public async Task<List<HelloGreetingEntity>> GetAllGreetings()
         {
             return await _greetingRL.GetAllGreetings();
         }
 
-        public async Task<UserModel?> GetGreetingById(int id)
+        public async Task<HelloGreetingEntity?> GetGreetingById(string key)
         {
-            return await _greetingRL.GetGreetingById(id);
+            return await _greetingRL.GetGreetingById(key);
         }
 
-        public async Task<UserModel?> UpdateGreeting(int id, UserModel userModel)
+        public async Task<bool> UpdateGreeting(string key, string newValue)
         {
-            return await _greetingRL.UpdateGreeting(id, userModel);
+            return await _greetingRL.UpdateGreeting(key, newValue);
         }
 
-        public async Task<bool> DeleteGreeting(int id)
+        public async Task<bool> DeleteGreeting(string key)
         {
-            return await _greetingRL.DeleteGreeting(id);
+            return await _greetingRL.DeleteGreeting(key);
         }
     }
 }

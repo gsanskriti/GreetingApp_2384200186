@@ -40,50 +40,32 @@ namespace repositoryLayer.services
             return greetingMessage;
         }
 
-        public async Task<List<UserModel>> GetAllGreetings()
+        public async Task<List<HelloGreetingEntity>> GetAllGreetings()
         {
-            var greetings = await _context.Greetings.ToListAsync();
-            return greetings.Select(g => new UserModel
-            {
-                FirstName = g.Key,
-                LastName = g.Value
-            }).ToList();
+            return await _context.Greetings.ToListAsync();
         }
 
-        public async Task<UserModel?> GetGreetingById(int id)
+        public async Task<HelloGreetingEntity?> GetGreetingById(string key)
         {
-            var greeting = await _context.Greetings.FindAsync(id);
-            if (greeting == null)
-                return null;
-
-            return new UserModel
-            {
-                FirstName = greeting.Key,
-                LastName = greeting.Value
-            };
+            return await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
         }
 
-        public async Task<UserModel?> UpdateGreeting(int id, UserModel userModel)
+        public async Task<bool> UpdateGreeting(string key, string newValue)
         {
-            var greeting = await _context.Greetings.FindAsync(id);
+            var greeting = await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
             if (greeting == null)
-                return null;
+                return false;
 
-            greeting.Value = $"{userModel.FirstName} {userModel.LastName}";
-
+            greeting.Value = newValue;
             _context.Greetings.Update(greeting);
             await _context.SaveChangesAsync();
 
-            return new UserModel
-            {
-                FirstName = greeting.Key,
-                LastName = greeting.Value
-            };
+            return true;
         }
 
-        public async Task<bool> DeleteGreeting(int id)
+        public async Task<bool> DeleteGreeting(string key)
         {
-            var greeting = await _context.Greetings.FindAsync(id);
+            var greeting = await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
             if (greeting == null)
                 return false;
 

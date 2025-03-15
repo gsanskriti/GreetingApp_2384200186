@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using modelLayer.model;
+using repositoryLayer.Entity;
 
 namespace businessLayer.@interface
 {
@@ -8,9 +9,9 @@ namespace businessLayer.@interface
     {
         string HelloMessage();
         Task<string> GreetingMessage(UserModel userModel);
-        Task<List<UserModel>> GetAllGreetings();
-        Task<UserModel?> GetGreetingById(int id);
-        Task<UserModel?> UpdateGreeting(int id, UserModel userModel);
-        Task<bool> DeleteGreeting(int id);
+        Task<List<HelloGreetingEntity>> GetAllGreetings();
+        Task<HelloGreetingEntity?> GetGreetingById(string key);
+        Task<bool> UpdateGreeting(string key, string newValue);
+        Task<bool> DeleteGreeting(string key);
     }
 }
