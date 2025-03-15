@@ -50,17 +50,17 @@ namespace repositoryLayer.services
             return await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
         }
 
-        public async Task<bool> UpdateGreeting(string key, string newValue)
+        public async Task<HelloGreetingEntity?> UpdateGreeting(string key, string newValue)
         {
             var greeting = await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
             if (greeting == null)
-                return false;
+                return null;
 
             greeting.Value = newValue;
             _context.Greetings.Update(greeting);
             await _context.SaveChangesAsync();
 
-            return true;
+            return greeting;
         }
 
         public async Task<bool> DeleteGreeting(string key)

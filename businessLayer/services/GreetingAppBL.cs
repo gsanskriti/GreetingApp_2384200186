@@ -36,7 +36,7 @@ namespace businessLayer.services
             return await _greetingRL.GetGreetingById(key);
         }
 
-        public async Task<bool> UpdateGreeting(string key, string newValue)
+        public async Task<HelloGreetingEntity?> UpdateGreeting(string key, string newValue)
         {
             return await _greetingRL.UpdateGreeting(key, newValue);
         }

@@ -51,7 +51,7 @@ namespace HelloGreetingApplication.Controllers
             _logger.LogInformation($"Fetching greeting with key: {key}");
             var greeting = await _greetingBL.GetGreetingById(key);
             if (greeting == null)
-                return NotFound($"Greeting with key {key} not found.");
+                return NotFound(new { Message = $"Greeting with key {key} not found." });
             return Ok(greeting);
         }
 
@@ -64,7 +64,7 @@ namespace HelloGreetingApplication.Controllers
         public async Task<IActionResult> CreateGreeting([FromBody] HelloGreetingEntity greetingEntity)
         {
             _logger.LogInformation("Creating a new greeting.");
-            var createdGreeting = await _greetingBL.GreetingMessage(HelloGreetingEntity);
+            var createdGreeting = await _greetingBL.GreetingMessage(greetingEntity);
             return Ok(createdGreeting);
         }
 
@@ -78,10 +78,10 @@ namespace HelloGreetingApplication.Controllers
         public async Task<IActionResult> UpdateGreeting(string key, [FromBody] string newValue)
         {
             _logger.LogInformation($"Updating greeting with key: {key}");
-            var isUpdated = await _greetingBL.UpdateGreeting(key, newValue);
-            if (!isUpdated)
-                return NotFound($"Greeting with key {key} not found for update.");
-            return Ok("Greeting updated successfully.");
+            var updatedGreeting = await _greetingBL.UpdateGreeting(key, newValue);
+            if (updatedGreeting == null)
+                return NotFound(new { Message = $"Greeting with key {key} not found for update." });
+            return Ok(updatedGreeting);
         }
 
         /// <summary>
@@ -94,10 +94,10 @@ namespace HelloGreetingApplication.Controllers
         public async Task<IActionResult> PatchGreeting(string key, [FromBody] string newValue)
         {
             _logger.LogInformation($"Patching greeting with key: {key}");
-            var isUpdated = await _greetingBL.UpdateGreeting(key, newValue);
-            if (!isUpdated)
-                return NotFound($"Greeting with key {key} not found for update.");
-            return Ok("Greeting partially updated successfully.");
+            var updatedGreeting = await _greetingBL.UpdateGreeting(key, newValue);
+            if (updatedGreeting == null)
+                return NotFound(new { Message = $"Greeting with key {key} not found for update." });
+            return Ok(updatedGreeting);
         }
 
         /// <summary>
@@ -111,8 +111,8 @@ namespace HelloGreetingApplication.Controllers
             _logger.LogInformation($"Deleting greeting with key: {key}");
             var isDeleted = await _greetingBL.DeleteGreeting(key);
             if (!isDeleted)
-                return NotFound($"Greeting with key {key} not found for deletion.");
-            return Ok("Greeting deleted successfully.");
+                return NotFound(new { Message = $"Greeting with key {key} not found for deletion." });
+            return Ok(new { Message = "Greeting deleted successfully." });
         }
     }
 }
