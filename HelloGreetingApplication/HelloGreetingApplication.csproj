@@ -20,4 +20,10 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="middleware\" />
+  </ItemGroup>
 </Project>

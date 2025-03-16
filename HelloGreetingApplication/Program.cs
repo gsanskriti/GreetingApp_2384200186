@@ -7,6 +7,7 @@ using repositoryLayer.@interface;
 using repositoryLayer.services;
 using Microsoft.EntityFrameworkCore;
 using repositoryLayer.Context;
+using HelloGreetingApplication.Middleware;
 
 // Configure logger
 var logger = NLog.LogManager.Setup().LoadConfigurationFromFile("NLog.config").GetCurrentClassLogger();
@@ -63,6 +64,9 @@ if (app.Environment.IsDevelopment())
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "GreetingApp API v1");
     });
 }
+
+// Use Global Exception Handling Middleware
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
