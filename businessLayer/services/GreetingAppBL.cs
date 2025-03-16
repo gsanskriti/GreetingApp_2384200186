@@ -1,15 +1,19 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using businessLayer.@interface;
 using modelLayer.model;
 using repositoryLayer.@interface;
 using repositoryLayer.Entity;
+using NLog;
+using Microsoft.Extensions.Logging;
 
 namespace businessLayer.services
 {
     public class GreetingAppBL : IGreetingAppBL
     {
         private readonly IGreetingAppRL _greetingRL;
+        private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
 
         public GreetingAppBL(IGreetingAppRL greetingRL)
         {
@@ -23,7 +27,9 @@ namespace businessLayer.services
 
         public async Task<string> GreetingMessage(UserModel userModel)
         {
-            return await _greetingRL.GreetingMessage(userModel);
+            var result = await _greetingRL.GreetingMessage(userModel);
+            logger.Info("Greeting message created successfully");
+            return result;
         }
 
         public async Task<List<HelloGreetingEntity>> GetAllGreetings()
@@ -36,14 +42,27 @@ namespace businessLayer.services
             return await _greetingRL.GetGreetingById(key);
         }
 
-        public async Task<HelloGreetingEntity?> UpdateGreeting(string key, string newValue)
+        public async Task<bool> UpdateGreeting(string key, string newValue)
         {
-            return await _greetingRL.UpdateGreeting(key, newValue);
+            var result = await _greetingRL.UpdateGreeting(key, newValue);
+            if (result)
+                logger.Info("Greeting updated successfully with key: {0}", key);
+            else
+                logger.Warn("Failed to update greeting, key not found: {0}", key);
+
+            return result;
         }
 
         public async Task<bool> DeleteGreeting(string key)
         {
-            return await _greetingRL.DeleteGreeting(key);
+            var result = await _greetingRL.DeleteGreeting(key);
+            if (result)
+                logger.Info("Greeting deleted successfully with key: {0}", key);
+            else
+                logger.Warn("Failed to delete greeting, key not found: {0}", key);
+
+            return result;
         }
     }
 }
+

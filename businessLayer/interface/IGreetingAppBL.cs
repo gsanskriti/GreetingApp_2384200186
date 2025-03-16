@@ -11,7 +11,7 @@ namespace businessLayer.@interface
         Task<string> GreetingMessage(UserModel userModel);
         Task<List<HelloGreetingEntity>> GetAllGreetings();
         Task<HelloGreetingEntity?> GetGreetingById(string key);
-        Task<HelloGreetingEntity?> UpdateGreeting(string key, string newValue);
+        Task<bool> UpdateGreeting(string key, string newValue);
         Task<bool> DeleteGreeting(string key);
     }
 }

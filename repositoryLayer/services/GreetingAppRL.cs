@@ -6,12 +6,15 @@ using repositoryLayer.Context;
 using repositoryLayer.Entity;
 using modelLayer.model;
 using Microsoft.EntityFrameworkCore;
+using NLog;
+using Microsoft.Extensions.Logging;
 
 namespace repositoryLayer.services
 {
     public class GreetingAppRL : IGreetingAppRL
     {
         private readonly HelloGreetingContext _context;
+        private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
 
         public GreetingAppRL(HelloGreetingContext context)
         {
@@ -36,6 +39,7 @@ namespace repositoryLayer.services
 
             await _context.Greetings.AddAsync(greetingEntity);
             await _context.SaveChangesAsync();
+            logger.Info("Greeting message added successfully with key: {0}", greetingEntity.Key);
 
             return greetingMessage;
         }
@@ -50,27 +54,35 @@ namespace repositoryLayer.services
             return await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
         }
 
-        public async Task<HelloGreetingEntity?> UpdateGreeting(string key, string newValue)
+        public async Task<bool> UpdateGreeting(string key, string newValue)
         {
             var greeting = await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
             if (greeting == null)
-                return null;
+            {
+                logger.Warn("Failed to update greeting, key not found: {0}", key);
+                return false;
+            }
 
             greeting.Value = newValue;
             _context.Greetings.Update(greeting);
             await _context.SaveChangesAsync();
+            logger.Info("Greeting updated successfully with key: {0}", key);
 
-            return greeting;
+            return true;
         }
 
         public async Task<bool> DeleteGreeting(string key)
         {
             var greeting = await _context.Greetings.FirstOrDefaultAsync(g => g.Key == key);
             if (greeting == null)
+            {
+                logger.Warn("Failed to delete greeting, key not found: {0}", key);
                 return false;
+            }
 
             _context.Greetings.Remove(greeting);
             await _context.SaveChangesAsync();
+            logger.Info("Greeting deleted successfully with key: {0}", key);
             return true;
         }
     }

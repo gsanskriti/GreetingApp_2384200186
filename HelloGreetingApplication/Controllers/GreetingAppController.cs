@@ -4,6 +4,8 @@ using Microsoft.Extensions.Logging;
 using repositoryLayer.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NLog;
+using ILogger = NLog.ILogger;
 
 namespace HelloGreetingApplication.Controllers
 {
@@ -14,17 +16,15 @@ namespace HelloGreetingApplication.Controllers
     [Route("[controller]")]
     public class GreetingAppController : ControllerBase
     {
-        private readonly ILogger<GreetingAppController> _logger;
+        private static readonly ILogger logger = LogManager.GetCurrentClassLogger();
         private readonly IGreetingAppBL _greetingBL;
 
         /// <summary>
-        /// Constructor for injecting logger and business logic layer.
+        /// Constructor for injecting business logic layer.
         /// </summary>
-        /// <param name="logger">Logger instance</param>
         /// <param name="greetingBL">Business logic layer instance</param>
-        public GreetingAppController(ILogger<GreetingAppController> logger, IGreetingAppBL greetingBL)
+        public GreetingAppController(IGreetingAppBL greetingBL)
         {
-            _logger = logger;
             _greetingBL = greetingBL;
         }
 
@@ -35,7 +35,7 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllGreetings()
         {
-            _logger.LogInformation("Fetching all greetings.");
+            logger.Info("Fetching all greetings.");
             var greetings = await _greetingBL.GetAllGreetings();
             return Ok(greetings);
         }
@@ -48,10 +48,13 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet("{key}")]
         public async Task<IActionResult> GetGreetingByKey(string key)
         {
-            _logger.LogInformation($"Fetching greeting with key: {key}");
+            logger.Info($"Fetching greeting with key: {key}");
             var greeting = await _greetingBL.GetGreetingById(key);
             if (greeting == null)
+            {
+                logger.Warn($"Greeting with key {key} not found.");
                 return NotFound(new { Message = $"Greeting with key {key} not found." });
+            }
             return Ok(greeting);
         }
 
@@ -63,7 +66,7 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateGreeting([FromBody] HelloGreetingEntity greetingEntity)
         {
-            _logger.LogInformation("Creating a new greeting.");
+            logger.Info("Creating a new greeting.");
             var createdGreeting = await _greetingBL.GreetingMessage(greetingEntity);
             return Ok(createdGreeting);
         }
@@ -77,11 +80,14 @@ namespace HelloGreetingApplication.Controllers
         [HttpPut("{key}")]
         public async Task<IActionResult> UpdateGreeting(string key, [FromBody] string newValue)
         {
-            _logger.LogInformation($"Updating greeting with key: {key}");
-            var updatedGreeting = await _greetingBL.UpdateGreeting(key, newValue);
-            if (updatedGreeting == null)
+            logger.Info($"Updating greeting with key: {key}");
+            var isUpdated = await _greetingBL.UpdateGreeting(key, newValue);
+            if (!isUpdated)
+            {
+                logger.Warn($"Failed to update greeting, key {key} not found.");
                 return NotFound(new { Message = $"Greeting with key {key} not found for update." });
-            return Ok(updatedGreeting);
+            }
+            return Ok(new { Message = "Greeting updated successfully." });
         }
 
         /// <summary>
@@ -93,11 +99,14 @@ namespace HelloGreetingApplication.Controllers
         [HttpPatch("{key}")]
         public async Task<IActionResult> PatchGreeting(string key, [FromBody] string newValue)
         {
-            _logger.LogInformation($"Patching greeting with key: {key}");
-            var updatedGreeting = await _greetingBL.UpdateGreeting(key, newValue);
-            if (updatedGreeting == null)
+            logger.Info($"Patching greeting with key: {key}");
+            var isUpdated = await _greetingBL.UpdateGreeting(key, newValue);
+            if (!isUpdated)
+            {
+                logger.Warn($"Failed to patch greeting, key {key} not found.");
                 return NotFound(new { Message = $"Greeting with key {key} not found for update." });
-            return Ok(updatedGreeting);
+            }
+            return Ok(new { Message = "Greeting patched successfully." });
         }
 
         /// <summary>
@@ -108,10 +117,13 @@ namespace HelloGreetingApplication.Controllers
         [HttpDelete("{key}")]
         public async Task<IActionResult> DeleteGreeting(string key)
         {
-            _logger.LogInformation($"Deleting greeting with key: {key}");
+            logger.Info($"Deleting greeting with key: {key}");
             var isDeleted = await _greetingBL.DeleteGreeting(key);
             if (!isDeleted)
+            {
+                logger.Warn($"Failed to delete greeting, key {key} not found.");
                 return NotFound(new { Message = $"Greeting with key {key} not found for deletion." });
+            }
             return Ok(new { Message = "Greeting deleted successfully." });
         }
     }
